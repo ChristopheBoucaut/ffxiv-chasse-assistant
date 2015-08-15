@@ -1,0 +1,29 @@
+body > div > header > h1 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+article {
+    overflow: hidden;
+}
+
+article > md-toolbar > .md-button {
+    transition: all 0.5s;
+}
+
+article.open > md-toolbar > .md-button {
+    transform: rotate(90deg);
+}
+
+article > md-toolbar > .md-button > md-icon {
+    color: white;
+}
+
+article > md-list > md-list-item {
+    margin-top: -10%;
+    transition: margin-top 0.5s;
+}
+
+article.open > md-list > md-list-item {
+    margin-top: 0;
+}
