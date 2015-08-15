@@ -20,7 +20,7 @@ article > md-toolbar > .md-button > md-icon {
 }
 
 article > md-list > md-list-item {
-    margin-top: -10%;
+    margin-top: -30%;
     transition: margin-top 0.5s;
 }
 
