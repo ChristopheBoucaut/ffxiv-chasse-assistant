@@ -1,0 +1,66 @@
+<html ng-app="ffxivChasse">
+<head>
+    <title>FFXIV - Assistant pour la chasse</title>
+    <link rel="stylesheet" type="text/css" href="vendor/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div layout-margin>
+        <header>
+            <h1>FFXIV - Assistant pour la chasse</h1>
+        </header>
+
+        <main ng-controller="mainController">
+            <div>
+                <md-button class="md-raised md-primary" aria-label="RAZ">Remise à zero</md-button>
+                <md-button class="md-raised md-primary" aria-label="Export">Export</md-button>
+                <md-button class="md-raised md-primary" aria-label="Import">Import</md-button>
+                <md-button class="md-raised md-warn" ng-click="modeChasse = !modeChasse" aria-label="Toggle chasse mode">Mode chasse [{{ modeChasse ? 'ON' : 'OFF' }}]</md-button>
+            </div>
+            <section>
+                <article ng-repeat="map in maps" layout-margin ng-class="{open: !mapClosed[$index]}" ng-init="mapIndex = $index">
+                    <md-toolbar class="md-toolbar-tools">
+                        <md-button aria-label="Open and close" class="md-icon-button" ng-click="mapClosed[$index] = !mapClosed[$index]">
+                            <md-icon md-svg-icon="arrow"></md-icon>
+                        </md-button>
+                        <h2>
+                            {{ map.name }}
+                            <span ng-if="countPropertiesObj(currentMobs[$index]) > 0">[{{ countPropertiesObj(currentMobs[$index]) }}]</span>
+                        </h2>
+                    </md-toolbar>
+                    <md-list>
+                        <md-list-item ng-repeat="mob in map.mobs" layout="row" layout-wrap>
+                            <div flex="85">
+                                <md-checkbox ng-model="currentMobs[mapIndex][$index]" aria-label="active mob">
+                                    {{ mob.name }}
+                                </md-checkbox>
+                            </div>
+                            <div flex="10">
+                                x: {{ mob.position.x }} - y: {{ mob.position.y }}
+                            </div>
+                            <div flex="5">
+                                <md-button aria-label="Open map" class="md-icon-button md-accent" ng-click="openMap(mob.position, $event)">
+                                    <md-icon md-svg-icon="map"></md-icon>
+                                </md-button>
+                            </div>
+                            <md-divider ng-if="!$last"></md-divider>
+                        </md-list-item>
+                    </md-list>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-aria.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-animate.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-material.min.js"></script>
+
+    <script type="text/javascript" src="vendor/cbAngularUtils/storage.js"></script>
+
+    <script type="text/javascript" src="js/app/app.js"></script>
+    <script type="text/javascript" src="js/app/maps.js"></script>
+    <script type="text/javascript" src="js/app/controllers/mainController.js"></script>
+</body>
+</html>
