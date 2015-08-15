@@ -27,3 +27,7 @@ article > md-list > md-list-item {
 article.open > md-list > md-list-item {
     margin-top: 0;
 }
+
+.text-center {
+    text-align: center;
+}
