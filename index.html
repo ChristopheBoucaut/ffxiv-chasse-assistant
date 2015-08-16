@@ -12,34 +12,49 @@
 
         <main ng-controller="mainController">
             <div>
-                <md-button class="md-raised md-primary" aria-label="RAZ">Remise à zero</md-button>
-                <md-button class="md-raised md-primary" aria-label="Export">Export</md-button>
-                <md-button class="md-raised md-primary" aria-label="Import">Import</md-button>
+                <md-button class="md-raised md-primary" aria-label="RAZ" ng-click="raz()">Remise à zero</md-button>
+                <md-button class="md-raised md-primary" aria-label="Export" ng-click="export()">Export</md-button>
+                <md-button class="md-raised md-primary" aria-label="Import" ng-click="openImport = !openImport; openExport = false;">Import</md-button>
                 <md-button class="md-raised md-warn" ng-click="modeChasse = !modeChasse" aria-label="Toggle chasse mode">Mode chasse [{{ modeChasse ? 'ON' : 'OFF' }}]</md-button>
             </div>
+            <div ng-if="openExport" layout-margin>
+                <form>
+                    <label for="export-json">Copier ces données pour exporter votre liste:</label>
+                    <input id="export-json" type="text" ng-model="exportJson">
+                </form>
+            </div>
+            <div ng-if="openImport" layout-margin>
+                <form ng-submit="import()">
+                    <label for="import-json">Données à importer:</label>
+                    <input id="import-json" type="text" ng-model="importJson">
+                </form>
+            </div>
             <section>
-                <article ng-repeat="map in maps" layout-margin ng-class="{open: !mapClosed[$index]}" ng-init="mapIndex = $index">
+                <form layout-margin>
+                    <p>Chercher un monstre : <input type="text" ng-model="search.mobs.name"></p>
+                </form>
+                <article ng-repeat="(idMap, map) in maps|mob:search" layout-margin ng-class="{open: !mapClosed[idMap]}" ng-hide="modeChasse && countPropertiesObj(currentMobs[idMap]) == 0">
                     <md-toolbar class="md-toolbar-tools">
-                        <md-button aria-label="Open and close" class="md-icon-button" ng-click="mapClosed[$index] = !mapClosed[$index]">
+                        <md-button aria-label="Open and close" class="md-icon-button" ng-click="mapClosed[idMap] = !mapClosed[idMap]">
                             <md-icon md-svg-icon="arrow"></md-icon>
                         </md-button>
                         <h2>
                             {{ map.name }}
-                            <span ng-if="countPropertiesObj(currentMobs[$index]) > 0">[{{ countPropertiesObj(currentMobs[$index]) }}]</span>
+                            <span ng-if="countPropertiesObj(currentMobs[idMap]) > 0">[{{ countPropertiesObj(currentMobs[idMap]) }}]</span>
                         </h2>
                     </md-toolbar>
                     <md-list>
-                        <md-list-item ng-repeat="mob in map.mobs" layout="row" layout-wrap>
+                        <md-list-item ng-repeat="(idMob, mob) in map.mobs|mob:search.mobs" layout="row" layout-wrap ng-hide="modeChasse && !currentMobs[idMap][idMob]">
                             <div flex="80">
-                                <md-checkbox ng-model="currentMobs[mapIndex][$index]" aria-label="active mob">
-                                    {{ mob.name }}
+                                <md-checkbox ng-model="currentMobs[idMap][idMob]" aria-label="active mob">
+                                    <a ng-href="http://fr.finalfantasyxiv.com/lodestone/playguide/db/npc/enemy/{{ idMob }}/" class="eorzeadb_link" target="_blank">{{ mob.name }}</a>
                                 </md-checkbox>
                             </div>
-                            <div flex="10" class="text-center">
-                                x: {{ mob.position.x }}<br>y: {{ mob.position.y }}
+                            <div flex="10" hide-sm class="text-center">
+                                {{ mob.positions.length }} positions connues
                             </div>
-                            <div flex="10" class="text-center">
-                                <md-button aria-label="Open map" class="md-icon-button md-warn" ng-click="openMap(mob.position, $event)">
+                            <div flex="10" flex-sm="20" class="text-center">
+                                <md-button aria-label="Open map" class="md-icon-button md-warn" ng-click="openMap(map, mob, $event)">
                                     <md-icon md-svg-icon="map"></md-icon>
                                 </md-button>
                             </div>
@@ -51,6 +66,7 @@
         </main>
     </div>
 
+    <script src="http://img.finalfantasyxiv.com/lds/pc/global/js/eorzeadb/loader.js?v1"></script>
     <script type="text/javascript" src="vendor/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/angular.min.js"></script>
     <script type="text/javascript" src="vendor/angular-aria.min.js"></script>
@@ -62,5 +78,6 @@
     <script type="text/javascript" src="js/app/app.js"></script>
     <script type="text/javascript" src="js/app/maps.js"></script>
     <script type="text/javascript" src="js/app/controllers/mainController.js"></script>
+    <script type="text/javascript" src="js/app/filters/mob.js"></script>
 </body>
 </html>
