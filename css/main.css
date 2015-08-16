@@ -31,3 +31,7 @@ article.open > md-list > md-list-item {
 .text-center {
     text-align: center;
 }
+
+#eorzeadb_tooltip {
+    z-index: 10;
+}
