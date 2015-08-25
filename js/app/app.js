@@ -16,4 +16,13 @@
                 .icon('map',  defaultPathIcons+'map.svg');
         }
     ]);
+
+    ffxivChasse.run([
+        '$rootScope',
+        function ($rootScope) {
+            window.addEventListener('resize', function () {
+                $rootScope.$broadcast('resize', {});
+            });
+        }
+    ]);
 })(window.angular);
