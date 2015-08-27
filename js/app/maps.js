@@ -87,6 +87,10 @@
                     '8221eb9e629': {
                         name: 'Piège-glace',
                         positions: [{x: 27, y: 14}, {x: 26, y: 18}]
+                    },
+                    '68480f161af': {
+                        name: 'Tursus des terres',
+                        positions: [{x: 33, y: 9}]
                     }
                 }
             },
@@ -229,6 +233,10 @@
                     'f8f4bee1a97': {
                         name: 'Allosaure',
                         positions: [{x: 8, y: 19}]
+                    },
+                    '09774dcde85': {
+                        name: 'Syricta antique',
+                        positions: [{x: 34, y: 22}]
                     }
                 }
             },
@@ -323,6 +331,10 @@
                     '1baa588169e': {
                         name: 'Tsanahale',
                         positions: [{x: 15, y: 7}]
+                    },
+                    '903b87ddafe': {
+                        name: 'Sanuwa',
+                        positions: [{x: 36, y: 21}]
                     }
                 }
             }
