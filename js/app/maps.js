@@ -32,6 +32,10 @@
                     '521183af2d5': {
                         name: 'Empousa',
                         positions: [{x: 30, y: 9}]
+                    },
+                    '2fccdb3a9ee': {
+                        name: 'Lamia cybride',
+                        positions: [{x: 27, y: 11}]
                     }
                 }
             },
@@ -46,7 +50,7 @@
                     },
                     'a1857ae0d99': {
                         name: 'Oculus',
-                        positions: [{x: 30, y: 31}]
+                        positions: [{x: 31, y: 28}]
                     },
                     '3dd001699ff': {
                         name: 'Bergthurs',
@@ -79,6 +83,10 @@
                     'ea95ada05cf': {
                         name: 'Chassie',
                         positions: [{x: 21, y: 27}, {x: 13, y: 19}]
+                    },
+                    '8221eb9e629': {
+                        name: 'Piège-glace',
+                        positions: [{x: 27, y: 14}, {x: 26, y: 18}]
                     }
                 }
             },
@@ -129,7 +137,7 @@
                     },
                     '51e0f31be43': {
                         name: 'Mélia',
-                        positions: [{x: 23, y: 26}]
+                        positions: [{x: 23, y: 26}, {x: 28, y: 24}]
                     },
                     '22b2d9dd8bf': {
                         name: 'Wyverne dravanienne',
@@ -138,6 +146,22 @@
                     'deb3e3abe4f': {
                         name: 'Gnathe myrmacier',
                         positions: [{x: 29, y: 36}]
+                    },
+                    'e3cc52ce179': {
+                        name: 'Chocobo sauvage',
+                        positions: [{x: 34, y: 28}, {x: 38, y: 25}, {x: 37, y: 24}]
+                    },
+                    '0fb5d0a89cc': {
+                        name: 'Tyrannosaure',
+                        positions: [{x: 13, y: 19}]
+                    },
+                    'a4b7e4b57d9': {
+                        name: 'Gallimimus',
+                        positions: [{x: 23, y: 11}]
+                    },
+                    '31761cf4c5e': {
+                        name: 'Dragon de foudre',
+                        positions: [{x: 29, y: 7}, {x: 31, y: 5}]
                     }
                 }
             },
@@ -197,6 +221,14 @@
                     '759eb58341e': {
                         name: 'Dragon de sang',
                         positions: [{x: 25, y: 7}]
+                    },
+                    '46ae94ac274': {
+                        name: 'Maître aérien mineur',
+                        positions: [{x: 18, y: 29}]
+                    },
+                    'f8f4bee1a97': {
+                        name: 'Allosaure',
+                        positions: [{x: 8, y: 19}]
                     }
                 }
             },
@@ -228,6 +260,10 @@
                     '1ccd406bf75': {
                         name: 'Grand morbol',
                         positions: [{x: 11, y: 23}]
+                    },
+                    '9eb53d17036': {
+                        name: 'Demoiselle',
+                        positions: [{x: 24, y: 21}]
                     }
                 }
             },
@@ -279,6 +315,14 @@
                     '99f2bacb51b': {
                         name: 'Dhalmel',
                         positions: [{x: 16, y: 31}, {x: 19, y: 29}]
+                    },
+                    '3620fdbfab1': {
+                        name: 'Wisent',
+                        positions: [{x: 11, y: 30}, {x: 14, y: 28}]
+                    },
+                    '1baa588169e': {
+                        name: 'Tsanahale',
+                        positions: [{x: 15, y: 7}]
                     }
                 }
             }
