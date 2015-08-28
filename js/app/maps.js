@@ -36,6 +36,10 @@
                     '2fccdb3a9ee': {
                         name: 'Lamia cybride',
                         positions: [{x: 27, y: 11}]
+                    },
+                    'dac543ba5f9': {
+                        name: 'Hibours',
+                        positions: [{x: 13, y: 12}]
                     }
                 }
             },
@@ -184,7 +188,7 @@
                     },
                     'fae31a9f6c3': {
                         name: 'Sankchinni',
-                        positions: [{x: 28, y: 33}]
+                        positions: [{x: 27, y: 32}]
                     },
                     '2f769299c1a': {
                         name: 'Dragonnet',
@@ -272,6 +276,10 @@
                     '9eb53d17036': {
                         name: 'Demoiselle',
                         positions: [{x: 24, y: 21}]
+                    },
+                    '4f731f57875': {
+                        name: 'Opken',
+                        positions: [{x: 11, y: 33}]
                     }
                 }
             },
