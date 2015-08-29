@@ -40,6 +40,10 @@
                     'dac543ba5f9': {
                         name: 'Hibours',
                         positions: [{x: 13, y: 12}]
+                    },
+                    '0230df12f65': {
+                        name: 'Chimère allagoise',
+                        positions: [{x: 31, y: 6}]
                     }
                 }
             },
@@ -66,7 +70,7 @@
                     },
                     '47bcf1990fb': {
                         name: 'Commandant gelé',
-                        positions: [{x: 8, y: 14}]
+                        positions: [{x: 8, y: 14}, {x: 8, y: 11}]
                     },
                     '67c7aee3980': {
                         name: 'Ours polaire',
@@ -170,6 +174,10 @@
                     '31761cf4c5e': {
                         name: 'Dragon de foudre',
                         positions: [{x: 29, y: 7}, {x: 31, y: 5}]
+                    },
+                    '4a171a11156': {
+                        name: 'Gnathe myrmifeu',
+                        positions: [{x: 28, y: 36}]
                     }
                 }
             },
@@ -280,6 +288,10 @@
                     '4f731f57875': {
                         name: 'Opken',
                         positions: [{x: 11, y: 33}]
+                    },
+                    'a6029b07eef': {
+                        name: 'Colibri d\'Orn',
+                        positions: [{x: 15, y: 25}]
                     }
                 }
             },
@@ -343,6 +355,10 @@
                     '903b87ddafe': {
                         name: 'Sanuwa',
                         positions: [{x: 36, y: 21}]
+                    },
+                    '811d429fab5': {
+                        name: 'Anzu',
+                        positions: [{x: 30, y: 6}]
                     }
                 }
             }
