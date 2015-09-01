@@ -99,6 +99,10 @@
                     '68480f161af': {
                         name: 'Tursus des terres',
                         positions: [{x: 33, y: 9}]
+                    },
+                    '39d61ff50d9': {
+                        name: 'Loup argenté',
+                        positions: [{x: 25, y: 24}]
                     }
                 }
             },
