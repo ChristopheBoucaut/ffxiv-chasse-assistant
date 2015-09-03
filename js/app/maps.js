@@ -44,6 +44,10 @@
                     '0230df12f65': {
                         name: 'Chimère allagoise',
                         positions: [{x: 31, y: 6}]
+                    },
+                    '0824e97af4c': {
+                        name: 'Droïde d\'exécution',
+                        positions: [{x: 18, y: 16}]
                     }
                 }
             },
@@ -296,11 +300,15 @@
                     'a6029b07eef': {
                         name: 'Colibri d\'Orn',
                         positions: [{x: 15, y: 25}]
+                    },
+                    '483d4abca9a': {
+                        name: 'Tireur gobelin',
+                        positions: [{x: 31, y: 21}]
                     }
                 }
             },
             '5': {
-                name: 'L\'écume des cieux de d\'Abalathia',
+                name: 'L\'écume des cieux d\'Abalathia',
                 fileName: 'ecume_cieux_abalathia.jpg',
                 positionMax: 44,
                 mobs: {
@@ -363,6 +371,10 @@
                     '811d429fab5': {
                         name: 'Anzu',
                         positions: [{x: 30, y: 6}]
+                    },
+                    '674b90e04c4': {
+                        name: 'Terragardien',
+                        positions: [{x: 22, y: 12}]
                     }
                 }
             }
