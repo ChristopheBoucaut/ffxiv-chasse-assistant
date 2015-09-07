@@ -304,6 +304,10 @@
                     '483d4abca9a': {
                         name: 'Tireur gobelin',
                         positions: [{x: 31, y: 21}]
+                    },
+                    'acdcc4e37de': {
+                        name: 'Biféricéras',
+                        positions: [{x: 26, y: 35}]
                     }
                 }
             },
