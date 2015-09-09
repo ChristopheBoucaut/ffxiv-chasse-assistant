@@ -48,6 +48,10 @@
                     '0824e97af4c': {
                         name: 'Droïde d\'exécution',
                         positions: [{x: 18, y: 16}]
+                    },
+                    '0a299b81eb1': {
+                        name: 'Hydre mineure',
+                        positions: [{x: 12, y: 33}]
                     }
                 }
             },
@@ -308,6 +312,10 @@
                     'acdcc4e37de': {
                         name: 'Biféricéras',
                         positions: [{x: 26, y: 35}]
+                    },
+                    '7a0a0dcd62e': {
+                        name: 'Narbrooi',
+                        positions: [{x: 38, y: 24}]
                     }
                 }
             },
@@ -379,6 +387,10 @@
                     '674b90e04c4': {
                         name: 'Terragardien',
                         positions: [{x: 22, y: 12}]
+                    },
+                    'db60cb63873': {
+                        name: 'Wamoura de la Fenêtre bleue',
+                        positions: [{x: 6, y: 19}]
                     }
                 }
             }
