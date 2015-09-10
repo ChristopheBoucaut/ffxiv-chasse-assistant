@@ -52,6 +52,10 @@
                     '0a299b81eb1': {
                         name: 'Hydre mineure',
                         positions: [{x: 12, y: 33}]
+                    },
+                    '6f2e03fed54': {
+                        name: 'Brobinyak méracydien',
+                        positions: [{x: 7, y: 31}]
                     }
                 }
             },
@@ -316,6 +320,10 @@
                     '7a0a0dcd62e': {
                         name: 'Narbrooi',
                         positions: [{x: 38, y: 24}]
+                    },
+                    'd51d6d067ce': {
+                        name: 'Rétameur gobelin',
+                        positions: [{x: 28, y: 23}]
                     }
                 }
             },
@@ -391,6 +399,10 @@
                     'db60cb63873': {
                         name: 'Wamoura de la Fenêtre bleue',
                         positions: [{x: 6, y: 19}]
+                    },
+                    '5186f5031dd': {
+                        name: 'Endymion',
+                        positions: [{x: 14, y: 10}]
                     }
                 }
             }
