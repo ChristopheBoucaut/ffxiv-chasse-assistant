@@ -56,6 +56,10 @@
                     '6f2e03fed54': {
                         name: 'Brobinyak méracydien',
                         positions: [{x: 7, y: 31}]
+                    },
+                    'a0bcba719f8': {
+                        name: 'Reptoïde',
+                        positions: [{x: 37, y: 7}]
                     }
                 }
             },
@@ -194,6 +198,10 @@
                     '4a171a11156': {
                         name: 'Gnathe myrmifeu',
                         positions: [{x: 28, y: 36}]
+                    },
+                    '672cd0131c2': {
+                        name: 'Eibis dravanien',
+                        positions: [{x: 25, y: 33}, {x: 22, y: 16}]
                     }
                 }
             },
@@ -324,6 +332,10 @@
                     'd51d6d067ce': {
                         name: 'Rétameur gobelin',
                         positions: [{x: 28, y: 23}]
+                    },
+                    '6810e241e49': {
+                        name: 'Ratel',
+                        positions: [{x: 31, y: 27}]
                     }
                 }
             },
