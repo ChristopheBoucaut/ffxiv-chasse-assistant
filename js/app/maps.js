@@ -60,6 +60,10 @@
                     'a0bcba719f8': {
                         name: 'Reptoïde',
                         positions: [{x: 37, y: 7}]
+                    },
+                    '2889891e3c5': {
+                        name: 'Falak méracydien',
+                        positions: [{x: 15, y: 28}]
                     }
                 }
             },
@@ -336,6 +340,10 @@
                     '6810e241e49': {
                         name: 'Ratel',
                         positions: [{x: 31, y: 27}]
+                    },
+                    'fa53bd53e77': {
+                        name: 'Gnou',
+                        positions: [{x: 34, y: 19}]
                     }
                 }
             },
@@ -415,6 +423,10 @@
                     '5186f5031dd': {
                         name: 'Endymion',
                         positions: [{x: 14, y: 10}]
+                    },
+                    '6d3f5d1aedc': {
+                        name: 'Totem des Vundu',
+                        positions: [{x: 17, y: 17}]
                     }
                 }
             }
