@@ -123,6 +123,10 @@
                     '39d61ff50d9': {
                         name: 'Loup argenté',
                         positions: [{x: 25, y: 24}]
+                    },
+                    '9f2deb55e3e': {
+                        name: 'Yak laineux',
+                        positions: [{x: 19, y: 17}]
                     }
                 }
             },
