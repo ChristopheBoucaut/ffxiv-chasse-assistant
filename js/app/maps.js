@@ -201,7 +201,7 @@
                     },
                     'a4b7e4b57d9': {
                         name: 'Gallimimus',
-                        positions: [{x: 23, y: 11}]
+                        positions: [{x: 23, y: 11}, {x: 17, y: 16}]
                     },
                     '31761cf4c5e': {
                         name: 'Dragon de foudre',
