@@ -64,6 +64,10 @@
                     '2889891e3c5': {
                         name: 'Falak méracydien',
                         positions: [{x: 15, y: 28}]
+                    },
+                    '2c77331b8fc': {
+                        name: 'Vouivre méracydienne',
+                        positions: [{x: 14, y: 36}]
                     }
                 }
             },
@@ -197,7 +201,7 @@
                     },
                     'a4b7e4b57d9': {
                         name: 'Gallimimus',
-                        positions: [{x: 23, y: 11}, {x: 17, y: 16}]
+                        positions: [{x: 23, y: 11}]
                     },
                     '31761cf4c5e': {
                         name: 'Dragon de foudre',
@@ -348,6 +352,10 @@
                     'fa53bd53e77': {
                         name: 'Gnou',
                         positions: [{x: 34, y: 19}]
+                    },
+                    '3658e444f8b': {
+                        name: 'Brandisseur gobelin',
+                        positions: [{x: 33, y: 22}, {x: 28, y: 23}, {x: 29, y: 20}]
                     }
                 }
             },
