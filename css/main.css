@@ -43,3 +43,7 @@ article.open > md-list > md-list-item {
 .dialogbox-opened .position {
     visibility: visible;
 }
+
+md-dialog > form {
+    height: 100%;
+}
