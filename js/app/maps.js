@@ -68,6 +68,10 @@
                     '2c77331b8fc': {
                         name: 'Vouivre méracydienne',
                         positions: [{x: 14, y: 36}]
+                    },
+                    '3da54d7fe8d': {
+                        name: 'Fleur-dépouille',
+                        positions: [{x: 36, y: 11}]
                     }
                 }
             },
@@ -214,6 +218,10 @@
                     '672cd0131c2': {
                         name: 'Eibis dravanien',
                         positions: [{x: 25, y: 33}, {x: 22, y: 16}]
+                    },
+                    '82c56c4c3b0': {
+                        name: 'Gnathe cultivateur',
+                        positions: [{x: 28, y: 35}]
                     }
                 }
             },
@@ -285,6 +293,10 @@
                     '09774dcde85': {
                         name: 'Syricta antique',
                         positions: [{x: 34, y: 22}]
+                    },
+                    '45f4b51fd6c': {
+                        name: 'Dragon des brumes',
+                        positions: [{x: 10, y: 17}]
                     }
                 }
             },
@@ -356,6 +368,10 @@
                     '3658e444f8b': {
                         name: 'Brandisseur gobelin',
                         positions: [{x: 33, y: 22}, {x: 28, y: 23}, {x: 29, y: 20}]
+                    },
+                    'fdea8f031f0': {
+                        name: 'Guêpe pepsis',
+                        positions: [{x: 20, y: 14}]
                     }
                 }
             },
